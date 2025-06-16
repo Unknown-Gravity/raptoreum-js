@@ -1,0 +1,39 @@
+{
+    "name": "raptoreum.js",
+    "version": "1.0.0",
+    "description": "Cliente RPC de Raptoreum",
+    "main": "index.js",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Unknown-Gravity/raptoreum-js"
+    },
+    "keywords": [
+        "raptoreum",
+        "rpc",
+        "blockchain",
+        "rtm",
+        "crypto",
+        "wallet",
+        "assets",
+        "nft"
+    ],
+    "author": "Álvaro Jiménez alvarojmsoftware@gmail.com & Alberto Zaragoza alberzh@gmail.com ",
+    "license": "MIT",
+    "files": [
+        "index.js",
+        "provider.js", 
+        "signer.js", 
+        "wallet.js", 
+        "README.md", 
+        "LICENSE" 
+    ],
+    "dependencies": {
+        "axios": "^1.5.0",
+        "dotenv": "^16.0.0",
+        "form-data": "^4.0.0",
+        "bitcoinjs-lib": "^6.1.0",
+        "ecpair": "^2.1.0",
+        "tiny-secp256k1": "^2.2.3"
+    }
+}
