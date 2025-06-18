@@ -1,0 +1,24 @@
+// filepath: /Users/alvarojimenezmartinez/Desktop/Proyecto Blockchain/rptClient_NPM/tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2020", // O la versión de ECMAScript que uses
+    "module": "ESNext", // O "NodeNext" si es más apropiado para tu uso de módulos
+    "moduleResolution": "node",
+    "declaration": true,          // ¡Importante! Genera los archivos .d.ts
+    "emitDeclarationOnly": true,  // Solo genera archivos .d.ts, no transpila JS
+    "outDir": "./dist/types",     // Directorio donde se guardarán los .d.ts
+    "allowJs": true,              // Permite procesar archivos .js
+    "checkJs": false,             // Opcional: habilita la comprobación de tipos en JS con JSDoc
+    "strict": true,               // Habilita comprobaciones estrictas para mejor calidad de tipos
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "./*.js" // Incluye tus archivos JS principales (index.js, provider.js, etc.)
+  ],
+  "exclude": [
+    "node_modules",
+    "prueba.js" // Excluye archivos de prueba o scripts que no sean parte de la librería
+  ]
+}

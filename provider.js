@@ -226,6 +226,16 @@ export class Provider {
     }
   }
 
+  //listassetbalancesbyaddress
+  async listassetbalancesbyaddress(address) {
+    try {
+      const result = await this.call('listassetbalancesbyaddress', [address]);
+      return result;
+    } catch (err) {
+      console.error('❌ Error al consultar balances de asset por dirección:', err.message);
+      throw err;
+    }
+  }
 
   /**
    * Crea un asset en la blockchain de Raptoreum
@@ -478,6 +488,9 @@ export class Provider {
     return await this.call('sendrawtransaction',
       [signed.hex, 0.1, false, true]);
   }
+
+
+
 
 }
 
